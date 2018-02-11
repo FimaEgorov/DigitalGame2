@@ -1,2 +1,2 @@
 # DigitalGame
-This place for digital game outputs
+https://fimaegorov.github.io/DigitalGame/knowladgeracegame.html
