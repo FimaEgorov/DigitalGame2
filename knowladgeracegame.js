@@ -9,7 +9,7 @@ var gFontsUpdateCacheList = [];
 var tFontsUpdateCacheList = [];
 lib.ssMetadata = [
 		{name:"knowladgeracegame_atlas_P_", frames: [[3912,542,180,105],[2980,542,930,543],[2980,0,960,540],[3912,711,180,60],[3942,182,150,180],[3442,1784,460,260],[4048,468,32,32],[3832,1404,214,175],[0,1338,1518,740],[0,0,1696,1336],[2980,2046,250,100],[3692,1606,230,174],[2980,1606,710,176],[3942,471,104,53],[2980,1784,460,260],[3912,649,180,60],[3942,0,150,180],[3904,1782,186,55],[3942,416,104,53],[3942,364,150,50],[2980,1404,850,200],[3904,1839,185,54],[2980,1087,960,315],[4048,416,45,50],[1698,0,1280,1220],[1698,1222,1280,1135]]},
-		{name:"knowladgeracegame_atlas_NP_", frames: [[1922,0,1320,1920],[0,4007,1920,1280],[1922,5126,1920,1280],[0,1442,1920,1281],[1922,7263,960,365],[0,2725,1920,1280],[1922,3844,1920,1280],[0,0,1920,1440],[1922,1922,1280,1920],[0,5289,1920,1109],[1922,6408,1280,853],[0,6400,1920,1082]]}
+		{name:"knowladgeracegame_atlas_NP_", frames: [[1922,4958,1320,928],[1922,2565,1920,1280],[0,2724,1920,1280],[1922,0,1920,1281],[0,5945,960,365],[1922,1283,1920,1280],[0,1442,1920,1280],[0,0,1920,1440],[1282,5888,1280,832],[1922,3847,1920,1109],[0,5090,1280,853],[0,4006,1920,1082]]}
 ];
 
 
@@ -990,7 +990,7 @@ p.nominalBounds = new cjs.Rectangle(-480,-250,2514,520);
 			//שאלה ראשונה
 			[0,
 				//השאלה עצמה
-				["pic", lib.jumpShot, "q1"], //להוסיף תמונה
+				["pic", lib.jumpshot, "q1"], //להוסיף תמונה
 				//שני מסיחים
 				["txt", "Layup", false],
 				["txt", "Jump Shot", true]
@@ -1620,6 +1620,28 @@ p.nominalBounds = new cjs.Rectangle(-480,-250,2514,520);
 					finalExplain.text = "לאחר מרוץ של " + qmax + " שאלות ו-" + gameInMinutes + ":" + gameInSeconds + " דקות הזוכה הוא:";
 					stage.addChild(finalExplain);
 					questionElms.push(finalExplain);
+					
+					var p1namelast = new createjs.Text();
+					p1namelast.x = 85;
+					p1namelast.y = 100;
+					p1namelast.color = "#2200FF";
+					p1namelast.font = "40px Arial";
+					stage.addChild(p1namelast);
+					p1namelast.text = p1name.text;
+					p1namelast.name = "p1namelast";
+					questionElms.push(p1namelast);
+		
+		
+		
+					var p2namelast = new createjs.Text();
+					p2namelast.x = 800;
+					p2namelast.y = 100;
+					p2namelast.color = "#FF7700";
+					p2namelast.font = "40px Arial";
+					stage.addChild(p2namelast);
+					p2namelast.text = p2name.text;
+					p2namelast.name = "p2namelast";
+					questionElms.push(p2namelast);
 		
 					//הזוכה:
 					if (scorep1 > scorep2) {
@@ -1657,8 +1679,8 @@ p.nominalBounds = new cjs.Rectangle(-480,-250,2514,520);
 					}
 		
 					var restart_btn = new lib.restart_btn; // הצבת הזמן הכולל שהשחקן שיחק
-					restart_btn.x = 580;
-					restart_btn.y = 340;
+					restart_btn.x = 480;
+					restart_btn.y = 380;
 					restart_btn.scaleX = 0.7;
 					restart_btn.scaleY = 0.7;
 					restart_btn.name = "restart_btn";
@@ -1666,6 +1688,10 @@ p.nominalBounds = new cjs.Rectangle(-480,-250,2514,520);
 					restart_btn.cursor = "pointer";
 					restart_btn.addEventListener('click', allover);
 					questionElms.push(restart_btn);
+		
+		
+		
+		
 		
 		
 		
@@ -1689,7 +1715,7 @@ p.nominalBounds = new cjs.Rectangle(-480,-250,2514,520);
 						stage.removeChild(stage.getChildByName("blue_car"));
 						stage.removeChild(stage.getChildByName("orange_car"));
 						home.Back.gotoAndPlay(97); //המסך המוצג כעת
-						window.addEventListener("keydown",beforegame );
+						window.addEventListener("keydown", beforegame);
 					}
 		
 				}
