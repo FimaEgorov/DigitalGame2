@@ -8,8 +8,8 @@ var loadedGoogleCount = 0;
 var gFontsUpdateCacheList = [];
 var tFontsUpdateCacheList = [];
 lib.ssMetadata = [
-		{name:"knowladgeracegame_atlas_P_", frames: [[3912,542,180,105],[2980,542,930,543],[2980,0,960,540],[3912,711,180,60],[3942,182,150,180],[3442,1784,460,260],[4048,468,32,32],[3832,1404,214,175],[0,1338,1518,740],[0,0,1696,1336],[2980,2046,250,100],[3692,1606,230,174],[2980,1606,710,176],[3942,471,104,53],[2980,1784,460,260],[3912,649,180,60],[3942,0,150,180],[3904,1782,186,55],[3942,416,104,53],[3942,364,150,50],[2980,1404,850,200],[3904,1839,185,54],[2980,1087,960,315],[4048,416,45,50],[1698,0,1280,1220],[1698,1222,1280,1135]]},
-		{name:"knowladgeracegame_atlas_NP_", frames: [[1922,4958,1320,928],[1922,2565,1920,1280],[0,2724,1920,1280],[1922,0,1920,1281],[0,5945,960,365],[1922,1283,1920,1280],[0,1442,1920,1280],[0,0,1920,1440],[1282,5888,1280,832],[1922,3847,1920,1109],[0,5090,1280,853],[0,4006,1920,1082]]}
+		{name:"knowladgeracegame_atlas_P_", frames: [[3912,542,180,105],[2980,542,930,543],[2980,0,960,540],[3904,1782,186,54],[3904,1838,186,54],[3912,711,180,60],[3942,182,150,180],[3442,1784,460,260],[4048,468,32,32],[3832,1404,214,175],[0,1338,1518,740],[0,0,1696,1336],[2980,2046,250,100],[3692,1606,230,174],[2980,1606,710,176],[3942,416,104,53],[2980,1784,460,260],[3912,649,180,60],[3942,0,150,180],[3942,471,104,53],[3942,364,150,50],[2980,1404,850,200],[3904,1894,185,54],[2980,1087,960,315],[4048,416,45,50],[1698,0,1280,1220],[1698,1222,1280,1135]]},
+		{name:"knowladgeracegame_atlas_NP_", frames: [[1922,4958,1320,928],[1922,1283,1920,1280],[0,1442,1920,1280],[1922,0,1920,1281],[0,5945,960,365],[1922,2565,1920,1280],[0,2724,1920,1280],[0,0,1920,1440],[1282,5888,1280,832],[1922,3847,1920,1109],[0,5090,1280,853],[0,4006,1920,1082]]}
 ];
 
 
@@ -94,6 +94,20 @@ lib.tfontAvailable = function(family, totalTypekitCount) {
 
 
 
+(lib.Bitmap48 = function() {
+	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
+	this.gotoAndStop(3);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Bitmap49 = function() {
+	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
+	this.gotoAndStop(4);
+}).prototype = p = new cjs.Sprite();
+
+
+
 (lib.block = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_NP_"];
 	this.gotoAndStop(0);
@@ -103,21 +117,21 @@ lib.tfontAvailable = function(family, totalTypekitCount) {
 
 (lib.blue_car = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(3);
+	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.blue_driver = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(4);
+	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.box = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(5);
+	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -131,7 +145,7 @@ lib.tfontAvailable = function(family, totalTypekitCount) {
 
 (lib.ComboBox = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(6);
+	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -166,35 +180,35 @@ lib.tfontAvailable = function(family, totalTypekitCount) {
 
 (lib.finish = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(7);
+	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.flags = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(8);
+	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.flagsback = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(9);
+	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.grey = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(10);
+	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.hitLogoBack = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(11);
+	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -215,35 +229,35 @@ lib.tfontAvailable = function(family, totalTypekitCount) {
 
 (lib.keyboard = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(12);
+	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.leftArrow = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(13);
+	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.lightblue = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(14);
+	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.orange_car = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(15);
+	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.orange_driver = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(16);
+	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -255,16 +269,9 @@ lib.tfontAvailable = function(family, totalTypekitCount) {
 
 
 
-(lib.restart = function() {
-	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(17);
-}).prototype = p = new cjs.Sprite();
-
-
-
 (lib.rightArrow = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(18);
+	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -278,35 +285,35 @@ lib.tfontAvailable = function(family, totalTypekitCount) {
 
 (lib.Smallblackstars = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(19);
+	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.stars = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(20);
+	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.startGame = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(21);
+	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.timeoff = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(22);
+	this.gotoAndStop(23);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.timer = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(23);
+	this.gotoAndStop(24);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -327,14 +334,14 @@ lib.tfontAvailable = function(family, totalTypekitCount) {
 
 (lib.correctV = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(24);
+	this.gotoAndStop(25);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.wrongX = function() {
 	this.spriteSheet = ss["knowladgeracegame_atlas_P_"];
-	this.gotoAndStop(25);
+	this.gotoAndStop(26);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -514,18 +521,32 @@ p._updateVisibility = _updateVisibility;
 p.nominalBounds = new cjs.Rectangle(-92.5,-27,185,54);
 
 
-(lib.restart_btn = function(mode,startPosition,loop) {
+(lib.restart2_btn = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 1
-	this.instance = new lib.restart();
+	this.instance = new lib.Bitmap48();
 	this.instance.parent = this;
-	this.instance.setTransform(-93,-27.5);
+	this.instance.setTransform(-93,-27);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-93,-27.5,186,55);
+p.nominalBounds = new cjs.Rectangle(-93,-27,186,54);
+
+
+(lib.restart_btn = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer 1
+	this.instance = new lib.Bitmap49();
+	this.instance.parent = this;
+	this.instance.setTransform(-93,-27);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-93,-27,186,54);
 
 
 (lib.howtoplaybut = function(mode,startPosition,loop) {
@@ -891,9 +912,7 @@ p.nominalBounds = new cjs.Rectangle(-480,-250,2514,520);
 			gameInSeconds = 0;
 			gameInMinutes++;
 		}
-		
-		var triger = 0;
-		
+		var trigger = 0;
 		var carsInterval;
 		var carsInterval2;
 		var carMovment = 1;
@@ -1225,8 +1244,8 @@ p.nominalBounds = new cjs.Rectangle(-480,-250,2514,520);
 			var nextscreentxt = new createjs.Text();
 			nextscreentxt.x = 400;
 			nextscreentxt.y = 460;
-			nextscreentxt.color = "#FFFFFF";
-			nextscreentxt.font = "20px Arial";
+			nextscreentxt.color = "#FFFF00";
+			nextscreentxt.font = "16px Arial";
 			stage.addChild(nextscreentxt);
 			nextscreentxt.text = "להמשך הקישו על ENTER";
 			nextscreentxt.name = "nextscreentxt";
@@ -1274,7 +1293,7 @@ p.nominalBounds = new cjs.Rectangle(-480,-250,2514,520);
 				var nextscreentxt = new createjs.Text();
 				nextscreentxt.x = 400;
 				nextscreentxt.y = 460;
-				nextscreentxt.color = "#FFFFFF";
+				nextscreentxt.color = "#FFFF00";
 				nextscreentxt.font = "16px Arial";
 				stage.addChild(nextscreentxt);
 				nextscreentxt.text = " להמשך הקישו על ENTER";
@@ -1295,800 +1314,843 @@ p.nominalBounds = new cjs.Rectangle(-480,-250,2514,520);
 		}
 		
 		function beforegame() {
-			stage.removeChild(stage.getChildByName("p1name"));
-			stage.removeChild(stage.getChildByName("p2name"));
-			stage.removeChild(stage.getChildByName("nextscreentxt"));
-			home.Back.gotoAndPlay(97);
-			window.removeEventListener("keydown", beforegame);
-			window.addEventListener("keydown", gameone);
-		}
 		
+			if (trigger != 0) {
+					home.Back.gotoAndPlay(97);
+					window.removeEventListener("keydown", beforegame);
+					window.addEventListener("keydown", gameone);
 		
-		
-		//---------------------משחק מכונאות רכב
-		function gameone() {
-			window.removeEventListener("keydown", gameone);
-			home.Back.gotoAndPlay(105);
-			startSound.stop();
-		
-			var blue_car = new lib.blue_car();
-			blue_car.x = 50;
-			blue_car.y = 400;
-			stage.addChild(blue_car);
-			blue_car.name = "blue_car";
-		
-			var orange_car = new lib.orange_car();
-			orange_car.x = 50;
-			orange_car.y = 450;
-			stage.addChild(orange_car);
-			orange_car.name = "orange_car";
-		
-			qnumtxt = new createjs.Text();
-			qnumtxt.x = 20;
-			qnumtxt.y = 40; //להחליט איפה ממוקם על המסך
-			qnumtxt.color = "#000000";
-			qnumtxt.font = "20px Arial";
-			qnumtxt.textAlign = "left";
-			stage.addChild(qnumtxt);
-		
-		
-			bringTheQuestion();
-		
-			function bringTheQuestion() {
-				if (moveSound)
-					moveSound.stop();
-				textboxfortimer.text = '30';
-				clearInterval(timerInterval);
-				timerInterval = setInterval(timer, 1000); //יוצר את האינטרוול של הטיימר
-		
-		
-				var pickedAnsp1; //מראה את הבחירה ששחקן 1 בחר
-				var pickedAnsp2; //מראה את הבחירה ששחקן 2 בחר
-				var counterAnsp1 = 0; //בודק כמה פעמים בחר שחקן 1 תשובה
-				var counterAnsp2 = 0; //בודק כמה פעמים בחר שחקן 2 תשובה
-		
-				switch (mychoice) //בחירה של רשימת שאלות על בסיס בחירה בקומבו לפי מצבים השונים
-				{
-					case "1":
-						qSelected = qmechanics;
-						break;
-					case "2":
-						qSelected = qsports;
-						break;
-					default:
-						qSelected = qmechanics;
-						break;
-				}
-				carDistance = 700.0 / qSelected.length;
-				qmax = qSelected.length; //משתנה גלובלי ששמנו בחלק העליון של המשחק
-				qnumtxt.text = (qnum) + "/" + qmax;
-				if (counterAnsp1 > counterAnsp2 && (correctAns - 1) == pickedAnsp1) { //בודק האם שחקן 1 לחץ מהר יותר משחקן 2 וצדק
-					scorep1++; //מקבל אקסטרה נקודה על מענה מהיר מהשחקן השני
-		
-					//תוכל להכניס פה את התנאי לרכב שיזוז יותר מהשני--------
-				} else if (counterAnsp1 < counterAnsp2 && (correctAns - 1) == pickedAnsp2) { //בודק האם שחקן 2 לחץ מהר יותר משחקן 1 וצדק
-					scorep2++; //מקבל אקסטרה נקודה על מענה מהיר מהשחקן השני
-		
-					//תוכל להכניס פה את התנאי לרכב שיזוז יותר מהשני--------
+				} else {
+					stage.removeChild(stage.getChildByName("p1name"));
+					stage.removeChild(stage.getChildByName("p2name"));
+					stage.removeChild(stage.getChildByName("nextscreentxt"));
+					home.Back.gotoAndPlay(97);
+					window.removeEventListener("keydown", beforegame);
+					window.addEventListener("keydown", gameone);
 				}
 		
+			}
 		
 		
-				//-----------------סוף החלק של החישוב שקשור לטיימר-------------------
 		
-				//בחירת שאלה רנדומלית משאלות המשחק
+			//---------------------משחק מכונאות רכב
+			function gameone() {
+				window.removeEventListener("keydown", gameone);
+				home.Back.gotoAndPlay(105);
+				startSound.stop();
 		
-				selectedQ = Math.floor(Math.random() * qSelected.length);
-				rndq = selectedQ
-				var howMuchKeys = qSelected[rndq].length - 1; //ישמש להעלאת מס' הכפתורים למשחק
+				var blue_car = new lib.blue_car();
+				blue_car.x = 50;
+				blue_car.y = 400;
+				stage.addChild(blue_car);
+				blue_car.name = "blue_car";
 		
-				if (qSelected[rndq][0] == 0) { //בדיקה שהשאלה לא נענתה בהצלחה כבר
+				var orange_car = new lib.orange_car();
+				orange_car.x = 50;
+				orange_car.y = 450;
+				stage.addChild(orange_car);
+				orange_car.name = "orange_car";
 		
-					qSelected[rndq][0] = 1; //הפוך לשאלה שכן נשאלה
-					showTheQuestions();
-		
-					function showTheQuestions() {
-						//יצירת השאלה על המסך
-						var maxImgQuestionHeight = 120; //הגדרות גובה מקסימלי של שאלה
-						var maxImgAnswerWidth = 190; //הגדרות גובה מקסימלי של שאלה
-		
-						for (i = 1; i < qSelected[rndq].length; i++) {
-		
-							//העלאת השאלה הנשאלת
-							if (i == 1) {
-								//בדיקה האם זה מלל
-								if (qSelected[rndq][i][0].indexOf("txt") != -1) {
-									var textq = new createjs.Text();
-									questionElms.push(textq);
-									textq.x = stageWidth / 2;
-									textq.y = 100; //להחליט איפה ממוקם על המסך
-									textq.color = "#FFFFF ";
-									textq.font = "20px Arial";
-									textq.textAlign = "center";
-									textq.text = qSelected[rndq][i][1];
-									textq.name = qSelected[rndq][i][2];
-									stage.addChild(textq); // 								
-		
-								} else if (qSelected[rndq][i][0].indexOf("pic") != -1) { //בדיקה האם זאת תמונה
-									var pictureq = new qSelected[rndq][i][1]();
-									questionElms.push(pictureq);
-									pictureq.scaleX = maxImgQuestionHeight / pictureq.getBounds().height;
-									pictureq.scaleY = maxImgQuestionHeight / pictureq.getBounds().height;
-									pictureq.x = stageWidth / 2 - (maxImgQuestionHeight / 2);
-									pictureq.y = 80; //להחליט איפה ממוקם על המסך
-		
-									pictureq.name = "picQ";
-									stage.addChild(pictureq);
-									//imageExplain(); //מאפשר להסבר על התמונה להופיע
-									//pictureq.addEventListener('mouseover', hoverPic); //מאפשר להגדיל את התמונה
-									//pictureq.addEventListener('mouseout', hoverPicOut); //מבטל הגדלת תמונה ביציאה ממנה
-								}
-							}
-		
-							//----------------------העלאת המסיחים--------------------
-							else if (i > 1) {
-								if (qSelected[rndq][i][2] == true) {
-									correctAns = i;
-								}
-								//בדיקה האם זה מלל
-								if (qSelected[rndq][i][0].indexOf("txt") != -1) { //במקרה וזה מלל
-		
-									var box = new lib.box();
-									box.x = (i - 1) * (stageWidth / (qSelected[rndq].length - 2)) - 350;
-									box.y = 150;
-									stage.addChild(box);
-									box.name = "box";
-									questionElms.push(box);
-		
-									var answernumberbox = new createjs.Text();
-									answernumberbox.x = (i - 1) * (stageWidth / (qSelected[rndq].length - 2)) - 40;
-									answernumberbox.y = 200;
-									answernumberbox.color = "#FFFFFF";
-									answernumberbox.font = "30px Arial";
-									stage.addChild(answernumberbox); //  
-									answernumberbox.text = i - 1;
-									answernumberbox.name = "answernumberbox";
-		
-									questionElms.push(answernumberbox);
-									var answerq = new createjs.Text(qSelected[rndq][i][1], "16px Arial", "#FFFFF");
-									answerq.textAlign = "right";
-									answerq.lineWidth = "150";
-									answerq.x = (i - 1) * (stageWidth / (qSelected[rndq].length - 2)) - 50;
-									answerq.y = 250; //להחליט איפה ממוקם על המסך
-									stage.addChild(answerq);
-		
-									questionElms.push(answerq);
-		
-								} else if (qSelected[rndq][i][0].indexOf("pic") != -1) { //במקרה וזה תמונה
-									//בדיקה האם זאת תמונה
-									var box = new lib.box();
-									box.x = (i - 1) * (stageWidth / (qSelected[rndq].length - 2)) - 350;
-									box.y = 150;
-									stage.addChild(box);
-									box.name = "box";
-									questionElms.push(box);
-		
-									var answernumberbox = new createjs.Text();
-									answernumberbox.x = (i - 1) * (stageWidth / (qSelected[rndq].length - 2)) - 40;
-									answernumberbox.y = 200;
-									answernumberbox.color = "#FFFFFF";
-									answernumberbox.font = "30px Arial";
-									stage.addChild(answernumberbox); //  
-									answernumberbox.text = i - 1;
-									answernumberbox.name = "answernumberbox";
-									questionElms.push(answernumberbox);
-		
-									var thisPic = new qSelected[rndq][i][1]();
-									thisPic.x = (i - 1) * (stageWidth / (qSelected[rndq].length - 2)) - 200;
-									thisPic.y = 220; //להחליט איפה ממוקם על המסך
-									thisPic.scaleX = maxImgAnswerWidth / thisPic.getBounds().width;
-									thisPic.scaleY = maxImgAnswerWidth / thisPic.getBounds().width;
-									thisPic.name = "p" + i;
-		
-									questionElms.push(thisPic);
-									stage.addChild(thisPic);
-									//imageExplain(); //מאפשר להסבר על התמונה להופיע
-									//"p" + i.addEventListener('mouseover', hoverPic); //מאפשר להגדיל את התמונה
-									//"p" + i.addEventListener('mouseout', hoverPicOut); //מבטל הגדלת תמונה ביציאה ממנה
-								}
-							}
-						}
-						//function imageExplain() {
-						//	var textPic = new createjs.Text();
-						//	questionElms.push(textPic);
-						//	textPic.x = stageWidth / 2;
-						//	textPic.y = 20; //להחליט איפה ממוקם על המסך
-						//	textPic.color = "#FFFFF ";
-						//	textPic.font = "10px Arial";
-						//	textPic.text = "להגדלת התמונה עברו מעליה בעזרת העכבר";
-						//	textPic.name = "howToPic";
-						//	stage.addChild(textPic);
-						//}
-						//function hoverPic(e) {
-						//	e.currentTarget.scaleX = 1.2;
-						//	e.currentTarget.scaleY = 1.2;
-						//	removeIfExists("howToPic");
-						//}
-						//function hoverPicOut(e) {
-						//	e.currentTarget.scaleX = 1;
-						//	e.currentTarget.scaleY = 1;
-		
-						//	var textPic = new createjs.Text();
-						//	questionElms.push(textPic);
-						//	textPic.x = stageWidth / 2;
-						//	textPic.y = 20; //להחליט איפה ממוקם על המסך
-						//	textPic.color = "#FFFFF ";
-						//	textPic.textAlign = "center";
-						//	textPic.font = "14px Arial";
-						//	textPic.text = "להגדלת התמונה עברו מעליה בעזרת העכבר";
-						//	textPic.name = "howToPic";
-						//	stage.addChild(textPic);
-						//}
+				qnumtxt = new createjs.Text();
+				qnumtxt.x = 20;
+				qnumtxt.y = 40; //להחליט איפה ממוקם על המסך
+				qnumtxt.color = "#000000";
+				qnumtxt.font = "20px Arial";
+				qnumtxt.textAlign = "left";
+				stage.addChild(qnumtxt);
 		
 		
-						openkeys(); //קורא לפונקציה שמחליטה כמה מקשים שמישים בשאלה
-					}
-				} else if (qSelected[rndq][0] == 1) {
+				bringTheQuestion();
 		
-					if (qSelected.filter(function (q) {
-						return (q[0] == 0)
-					}).length > 0) {
-						bringTheQuestion(); //בחירת שאלה מחדש
-					} else {
-						openFinishFrame();
-					}
-				}
-		
-				function openFinishFrame() {
-		
-					timeperp1 = parseInt(timeperp1 / qmax);
-					timeperp2 = parseInt(timeperp2 / qmax);
-					qnumtxt.text = "";
-					home.Back.gotoAndPlay(106);
-					textboxfortimer.text = '';
+				function bringTheQuestion() {
+					if (moveSound)
+						moveSound.stop();
+					textboxfortimer.text = '30';
 					clearInterval(timerInterval);
-					endSound = createjs.Sound.play("endSound");
-		
-					scorep1txtbox = new createjs.Text();
-					scorep1txtbox.x = 120;
-					scorep1txtbox.y = 200; //להחליט איפה ממוקם על המסך
-					scorep1txtbox.color = "#000000";
-					scorep1txtbox.font = "50px Arial";
-					scorep1txtbox.textAlign = "center";
-					scorep1txtbox.text = scorep1;
-					stage.addChild(scorep1txtbox);
-					questionElms.push(scorep1txtbox);
-		
-					scorep2txtbox = new createjs.Text();
-					scorep2txtbox.x = 820;
-					scorep2txtbox.y = 200; //להחליט איפה ממוקם על המסך
-					scorep2txtbox.color = "#000000";
-					scorep2txtbox.font = "50px Arial";
-					scorep2txtbox.textAlign = "center";
-					scorep2txtbox.text = scorep2;
-					stage.addChild(scorep2txtbox);
-					questionElms.push(scorep2txtbox);
-		
-					timep1txtbox = new createjs.Text();
-					timep1txtbox.x = 220;
-					timep1txtbox.y = 350; //להחליט איפה ממוקם על המסך
-					timep1txtbox.color = "#000000";
-					timep1txtbox.font = "30px Arial";
-					timep1txtbox.textAlign = "center";
-					timep1txtbox.text = timeperp1;
-					stage.addChild(timep1txtbox);
-					questionElms.push(timep1txtbox);
-		
-					timep2txtbox = new createjs.Text();
-					timep2txtbox.x = 880;
-					timep2txtbox.y = 350; //להחליט איפה ממוקם על המסך
-					timep2txtbox.color = "#000000";
-					timep2txtbox.font = "30px Arial";
-					timep2txtbox.textAlign = "center";
-					timep2txtbox.text = timeperp2;
-					stage.addChild(timep2txtbox);
-					questionElms.push(timep2txtbox);
+					timerInterval = setInterval(timer, 1000); //יוצר את האינטרוול של הטיימר
 		
 		
-					falsep1txtbox = new createjs.Text();
-					falsep1txtbox.x = 70;
-					falsep1txtbox.y = 350; //להחליט איפה ממוקם על המסך
-					falsep1txtbox.color = "#000000";
-					falsep1txtbox.font = "30px Arial";
-					falsep1txtbox.textAlign = "center";
-					falsep1txtbox.text = falsep1;
-					stage.addChild(falsep1txtbox);
-					questionElms.push(falsep1txtbox);
+					var pickedAnsp1; //מראה את הבחירה ששחקן 1 בחר
+					var pickedAnsp2; //מראה את הבחירה ששחקן 2 בחר
+					var counterAnsp1 = 0; //בודק כמה פעמים בחר שחקן 1 תשובה
+					var counterAnsp2 = 0; //בודק כמה פעמים בחר שחקן 2 תשובה
 		
-					falsep2txtbox = new createjs.Text();
-					falsep2txtbox.x = 750;
-					falsep2txtbox.y = 350; //להחליט איפה ממוקם על המסך
-					falsep2txtbox.color = "#000000";
-					falsep2txtbox.font = "30px Arial";
-					falsep2txtbox.textAlign = "center";
-					falsep2txtbox.text = falsep2;
-					stage.addChild(falsep2txtbox);
-					questionElms.push(falsep2txtbox);
-		
-					//הודעות נצחון:
-					finalExplain = new createjs.Text();
-					finalExplain.x = (stageWidth / 2) + 5;
-					finalExplain.y = 100; //להחליט איפה ממוקם על המסך
-					finalExplain.color = "#000000";
-					finalExplain.font = "20px Arial";
-					finalExplain.textAlign = "center";
-					finalExplain.text = "לאחר מרוץ של " + qmax + " שאלות ו-" + gameInMinutes + ":" + gameInSeconds + " דקות הזוכה הוא:";
-					stage.addChild(finalExplain);
-					questionElms.push(finalExplain);
-					
-					var p1namelast = new createjs.Text();
-					p1namelast.x = 85;
-					p1namelast.y = 100;
-					p1namelast.color = "#2200FF";
-					p1namelast.font = "40px Arial";
-					stage.addChild(p1namelast);
-					p1namelast.text = p1name.text;
-					p1namelast.name = "p1namelast";
-					questionElms.push(p1namelast);
-		
-		
-		
-					var p2namelast = new createjs.Text();
-					p2namelast.x = 800;
-					p2namelast.y = 100;
-					p2namelast.color = "#FF7700";
-					p2namelast.font = "40px Arial";
-					stage.addChild(p2namelast);
-					p2namelast.text = p2name.text;
-					p2namelast.name = "p2namelast";
-					questionElms.push(p2namelast);
-		
-					//הזוכה:
-					if (scorep1 > scorep2) {
-						theWinner = new createjs.Text();
-						theWinner.x = stageWidth / 2;
-						theWinner.y = 300; //להחליט איפה ממוקם על המסך
-						theWinner.color = "#2200FF";
-						theWinner.font = "50px Arial";
-						theWinner.textAlign = "center";
-						theWinner.text = p1name.text;
-						stage.addChild(theWinner);
-						questionElms.push(theWinner);
+					switch (mychoice) //בחירה של רשימת שאלות על בסיס בחירה בקומבו לפי מצבים השונים
+					{
+						case "1":
+							qSelected = qmechanics;
+							break;
+						case "2":
+							qSelected = qsports;
+							break;
+						default:
+							qSelected = qmechanics;
+							break;
 					}
-					if (scorep2 > scorep1) {
-						theWinner = new createjs.Text();
-						theWinner.x = stageWidth / 2;
-						theWinner.y = 300; //להחליט איפה ממוקם על המסך
-						theWinner.color = "#FF7700";
-						theWinner.font = "50px Arial";
-						theWinner.textAlign = "center";
-						theWinner.text = p2name.text;
-						stage.addChild(theWinner);
-						questionElms.push(theWinner);
+					carDistance = 700.0 / qSelected.length;
+					qmax = qSelected.length; //משתנה גלובלי ששמנו בחלק העליון של המשחק
+					qnumtxt.text = (qnum) + "/" + qmax;
+					if (counterAnsp1 > counterAnsp2 && (correctAns - 1) == pickedAnsp1) { //בודק האם שחקן 1 לחץ מהר יותר משחקן 2 וצדק
+						scorep1++; //מקבל אקסטרה נקודה על מענה מהיר מהשחקן השני
 		
-					} else if (scorep1 == scorep2) {
-						theWinner = new createjs.Text();
-						theWinner.x = stageWidth / 2;
-						theWinner.y = 300; //להחליט איפה ממוקם על המסך
-						theWinner.color = "#000000";
-						theWinner.font = "30px Arial";
-						theWinner.textAlign = "center";
-						theWinner.text = "תיקו";
-						stage.addChild(theWinner);
-						questionElms.push(theWinner);
+						//תוכל להכניס פה את התנאי לרכב שיזוז יותר מהשני--------
+					} else if (counterAnsp1 < counterAnsp2 && (correctAns - 1) == pickedAnsp2) { //בודק האם שחקן 2 לחץ מהר יותר משחקן 1 וצדק
+						scorep2++; //מקבל אקסטרה נקודה על מענה מהיר מהשחקן השני
+		
+						//תוכל להכניס פה את התנאי לרכב שיזוז יותר מהשני--------
 					}
 		
-					var restart_btn = new lib.restart_btn; // הצבת הזמן הכולל שהשחקן שיחק
-					restart_btn.x = 480;
-					restart_btn.y = 380;
-					restart_btn.scaleX = 0.7;
-					restart_btn.scaleY = 0.7;
-					restart_btn.name = "restart_btn";
-					stage.addChild(restart_btn);
-					restart_btn.cursor = "pointer";
-					restart_btn.addEventListener('click', allover);
-					questionElms.push(restart_btn);
 		
 		
+					//-----------------סוף החלק של החישוב שקשור לטיימר-------------------
+		
+					//בחירת שאלה רנדומלית משאלות המשחק
+		
+					selectedQ = Math.floor(Math.random() * qSelected.length);
+					rndq = selectedQ
+					var howMuchKeys = qSelected[rndq].length - 1; //ישמש להעלאת מס' הכפתורים למשחק
+		
+					if (qSelected[rndq][0] == 0) { //בדיקה שהשאלה לא נענתה בהצלחה כבר
+		
+						qSelected[rndq][0] = 1; //הפוך לשאלה שכן נשאלה
+						showTheQuestions();
+		
+						function showTheQuestions() {
+							//יצירת השאלה על המסך
+							var maxImgQuestionHeight = 120; //הגדרות גובה מקסימלי של שאלה
+							var maxImgAnswerWidth = 190; //הגדרות גובה מקסימלי של שאלה
+		
+							for (i = 1; i < qSelected[rndq].length; i++) {
+		
+								//העלאת השאלה הנשאלת
+								if (i == 1) {
+									//בדיקה האם זה מלל
+									if (qSelected[rndq][i][0].indexOf("txt") != -1) {
+										var textq = new createjs.Text();
+										questionElms.push(textq);
+										textq.x = stageWidth / 2;
+										textq.y = 100; //להחליט איפה ממוקם על המסך
+										textq.color = "#FFFFF ";
+										textq.font = "20px Arial";
+										textq.textAlign = "center";
+										textq.text = qSelected[rndq][i][1];
+										textq.name = qSelected[rndq][i][2];
+										stage.addChild(textq); // 								
+		
+									} else if (qSelected[rndq][i][0].indexOf("pic") != -1) { //בדיקה האם זאת תמונה
+										var pictureq = new qSelected[rndq][i][1]();
+										questionElms.push(pictureq);
+										pictureq.scaleX = maxImgQuestionHeight / pictureq.getBounds().height;
+										pictureq.scaleY = maxImgQuestionHeight / pictureq.getBounds().height;
+										pictureq.x = stageWidth / 2 - (maxImgQuestionHeight / 2);
+										pictureq.y = 80; //להחליט איפה ממוקם על המסך
+		
+										pictureq.name = "picQ";
+										stage.addChild(pictureq);
+										//imageExplain(); //מאפשר להסבר על התמונה להופיע
+										//pictureq.addEventListener('mouseover', hoverPic); //מאפשר להגדיל את התמונה
+										//pictureq.addEventListener('mouseout', hoverPicOut); //מבטל הגדלת תמונה ביציאה ממנה
+									}
+								}
+		
+								//----------------------העלאת המסיחים--------------------
+								else if (i > 1) {
+									if (qSelected[rndq][i][2] == true) {
+										correctAns = i;
+									}
+									//בדיקה האם זה מלל
+									if (qSelected[rndq][i][0].indexOf("txt") != -1) { //במקרה וזה מלל
+		
+										var box = new lib.box();
+										box.x = (i - 1) * (stageWidth / (qSelected[rndq].length - 2)) - 350;
+										box.y = 150;
+										stage.addChild(box);
+										box.name = "box";
+										questionElms.push(box);
+		
+										var answernumberbox = new createjs.Text();
+										answernumberbox.x = (i - 1) * (stageWidth / (qSelected[rndq].length - 2)) - 40;
+										answernumberbox.y = 200;
+										answernumberbox.color = "#FFFFFF";
+										answernumberbox.font = "30px Arial";
+										stage.addChild(answernumberbox); //  
+										answernumberbox.text = i - 1;
+										answernumberbox.name = "answernumberbox";
+		
+										questionElms.push(answernumberbox);
+										var answerq = new createjs.Text(qSelected[rndq][i][1], "16px Arial", "#FFFFF");
+										answerq.textAlign = "right";
+										answerq.lineWidth = "150";
+										answerq.x = (i - 1) * (stageWidth / (qSelected[rndq].length - 2)) - 50;
+										answerq.y = 250; //להחליט איפה ממוקם על המסך
+										stage.addChild(answerq);
+		
+										questionElms.push(answerq);
+		
+									} else if (qSelected[rndq][i][0].indexOf("pic") != -1) { //במקרה וזה תמונה
+										//בדיקה האם זאת תמונה
+										var box = new lib.box();
+										box.x = (i - 1) * (stageWidth / (qSelected[rndq].length - 2)) - 350;
+										box.y = 150;
+										stage.addChild(box);
+										box.name = "box";
+										questionElms.push(box);
+		
+										var answernumberbox = new createjs.Text();
+										answernumberbox.x = (i - 1) * (stageWidth / (qSelected[rndq].length - 2)) - 40;
+										answernumberbox.y = 200;
+										answernumberbox.color = "#FFFFFF";
+										answernumberbox.font = "30px Arial";
+										stage.addChild(answernumberbox); //  
+										answernumberbox.text = i - 1;
+										answernumberbox.name = "answernumberbox";
+										questionElms.push(answernumberbox);
+		
+										var thisPic = new qSelected[rndq][i][1]();
+										thisPic.x = (i - 1) * (stageWidth / (qSelected[rndq].length - 2)) - 200;
+										thisPic.y = 220; //להחליט איפה ממוקם על המסך
+										thisPic.scaleX = maxImgAnswerWidth / thisPic.getBounds().width;
+										thisPic.scaleY = maxImgAnswerWidth / thisPic.getBounds().width;
+										thisPic.name = "p" + i;
+		
+										questionElms.push(thisPic);
+										stage.addChild(thisPic);
+										//imageExplain(); //מאפשר להסבר על התמונה להופיע
+										//"p" + i.addEventListener('mouseover', hoverPic); //מאפשר להגדיל את התמונה
+										//"p" + i.addEventListener('mouseout', hoverPicOut); //מבטל הגדלת תמונה ביציאה ממנה
+									}
+								}
+							}
+							//function imageExplain() {
+							//	var textPic = new createjs.Text();
+							//	questionElms.push(textPic);
+							//	textPic.x = stageWidth / 2;
+							//	textPic.y = 20; //להחליט איפה ממוקם על המסך
+							//	textPic.color = "#FFFFF ";
+							//	textPic.font = "10px Arial";
+							//	textPic.text = "להגדלת התמונה עברו מעליה בעזרת העכבר";
+							//	textPic.name = "howToPic";
+							//	stage.addChild(textPic);
+							//}
+							//function hoverPic(e) {
+							//	e.currentTarget.scaleX = 1.2;
+							//	e.currentTarget.scaleY = 1.2;
+							//	removeIfExists("howToPic");
+							//}
+							//function hoverPicOut(e) {
+							//	e.currentTarget.scaleX = 1;
+							//	e.currentTarget.scaleY = 1;
+		
+							//	var textPic = new createjs.Text();
+							//	questionElms.push(textPic);
+							//	textPic.x = stageWidth / 2;
+							//	textPic.y = 20; //להחליט איפה ממוקם על המסך
+							//	textPic.color = "#FFFFF ";
+							//	textPic.textAlign = "center";
+							//	textPic.font = "14px Arial";
+							//	textPic.text = "להגדלת התמונה עברו מעליה בעזרת העכבר";
+							//	textPic.name = "howToPic";
+							//	stage.addChild(textPic);
+							//}
 		
 		
+							openkeys(); //קורא לפונקציה שמחליטה כמה מקשים שמישים בשאלה
+						}
+					} else if (qSelected[rndq][0] == 1) {
 		
-		
-		
-				}
-		
-				function allover() {
-					for (i = 0; i < qmechanics.length; i++) {
-						if (qmechanics[i][0] == 1) {
-							qmechanics[i][0] == 0;
+						if (qSelected.filter(function (q) {
+							return (q[0] == 0)
+						}).length > 0) {
+							bringTheQuestion(); //בחירת שאלה מחדש
+						} else {
+							openFinishFrame();
 						}
 					}
-					for (i = 0; i < qsports.length; i++) {
-						if (qsports[i][0] == 1) {
-							qsports[i][0] == 0;
+		
+					function openFinishFrame() {
+		
+						timeperp1 = parseInt(timeperp1 / qmax);
+						timeperp2 = parseInt(timeperp2 / qmax);
+						qnumtxt.text = "";
+						home.Back.gotoAndPlay(106);
+						textboxfortimer.text = '';
+						clearInterval(timerInterval);
+						endSound = createjs.Sound.play("endSound");
+		
+						scorep1txtbox = new createjs.Text();
+						scorep1txtbox.x = 120;
+						scorep1txtbox.y = 200; //להחליט איפה ממוקם על המסך
+						scorep1txtbox.color = "#000000";
+						scorep1txtbox.font = "50px Arial";
+						scorep1txtbox.textAlign = "center";
+						scorep1txtbox.text = scorep1;
+						stage.addChild(scorep1txtbox);
+						questionElms.push(scorep1txtbox);
+		
+						scorep2txtbox = new createjs.Text();
+						scorep2txtbox.x = 820;
+						scorep2txtbox.y = 200; //להחליט איפה ממוקם על המסך
+						scorep2txtbox.color = "#000000";
+						scorep2txtbox.font = "50px Arial";
+						scorep2txtbox.textAlign = "center";
+						scorep2txtbox.text = scorep2;
+						stage.addChild(scorep2txtbox);
+						questionElms.push(scorep2txtbox);
+		
+						timep1txtbox = new createjs.Text();
+						timep1txtbox.x = 220;
+						timep1txtbox.y = 350; //להחליט איפה ממוקם על המסך
+						timep1txtbox.color = "#000000";
+						timep1txtbox.font = "30px Arial";
+						timep1txtbox.textAlign = "center";
+						timep1txtbox.text = timeperp1;
+						stage.addChild(timep1txtbox);
+						questionElms.push(timep1txtbox);
+		
+						timep2txtbox = new createjs.Text();
+						timep2txtbox.x = 880;
+						timep2txtbox.y = 350; //להחליט איפה ממוקם על המסך
+						timep2txtbox.color = "#000000";
+						timep2txtbox.font = "30px Arial";
+						timep2txtbox.textAlign = "center";
+						timep2txtbox.text = timeperp2;
+						stage.addChild(timep2txtbox);
+						questionElms.push(timep2txtbox);
+		
+		
+						falsep1txtbox = new createjs.Text();
+						falsep1txtbox.x = 70;
+						falsep1txtbox.y = 350; //להחליט איפה ממוקם על המסך
+						falsep1txtbox.color = "#000000";
+						falsep1txtbox.font = "30px Arial";
+						falsep1txtbox.textAlign = "center";
+						falsep1txtbox.text = falsep1;
+						stage.addChild(falsep1txtbox);
+						questionElms.push(falsep1txtbox);
+		
+						falsep2txtbox = new createjs.Text();
+						falsep2txtbox.x = 750;
+						falsep2txtbox.y = 350; //להחליט איפה ממוקם על המסך
+						falsep2txtbox.color = "#000000";
+						falsep2txtbox.font = "30px Arial";
+						falsep2txtbox.textAlign = "center";
+						falsep2txtbox.text = falsep2;
+						stage.addChild(falsep2txtbox);
+						questionElms.push(falsep2txtbox);
+		
+						//הודעות נצחון:
+						finalExplain = new createjs.Text();
+						finalExplain.x = (stageWidth / 2) + 5;
+						finalExplain.y = 100; //להחליט איפה ממוקם על המסך
+						finalExplain.color = "#FFFF00";
+						finalExplain.font = "20px Arial";
+						finalExplain.textAlign = "center";
+						finalExplain.text = "לאחר מרוץ של " + qmax + " שאלות ו-" + gameInMinutes + ":" + gameInSeconds + " דקות הזוכה הוא:";
+						stage.addChild(finalExplain);
+						questionElms.push(finalExplain);
+		
+						var p1namelast = new createjs.Text();
+						p1namelast.x = 85;
+						p1namelast.y = 100;
+						p1namelast.color = "#2200FF";
+						p1namelast.font = "40px Arial";
+						stage.addChild(p1namelast);
+						p1namelast.text = p1name.text;
+						p1namelast.name = "p1namelast";
+						questionElms.push(p1namelast);
+		
+		
+		
+						var p2namelast = new createjs.Text();
+						p2namelast.x = 800;
+						p2namelast.y = 100;
+						p2namelast.color = "#FF7700";
+						p2namelast.font = "40px Arial";
+						stage.addChild(p2namelast);
+						p2namelast.text = p2name.text;
+						p2namelast.name = "p2namelast";
+						questionElms.push(p2namelast);
+		
+						//הזוכה:
+						if (scorep1 > scorep2) {
+							theWinner = new createjs.Text();
+							theWinner.x = stageWidth / 2;
+							theWinner.y = 300; //להחליט איפה ממוקם על המסך
+							theWinner.color = "#2200FF";
+							theWinner.font = "50px Arial";
+							theWinner.textAlign = "center";
+							theWinner.text = p1name.text;
+							stage.addChild(theWinner);
+							questionElms.push(theWinner);
 						}
+						if (scorep2 > scorep1) {
+							theWinner = new createjs.Text();
+							theWinner.x = stageWidth / 2;
+							theWinner.y = 300; //להחליט איפה ממוקם על המסך
+							theWinner.color = "#FF7700";
+							theWinner.font = "50px Arial";
+							theWinner.textAlign = "center";
+							theWinner.text = p2name.text;
+							stage.addChild(theWinner);
+							questionElms.push(theWinner);
+		
+						} else if (scorep1 == scorep2) {
+							theWinner = new createjs.Text();
+							theWinner.x = stageWidth / 2;
+							theWinner.y = 300; //להחליט איפה ממוקם על המסך
+							theWinner.color = "#FFFF00";
+							theWinner.font = "30px Arial";
+							theWinner.textAlign = "center";
+							theWinner.text = "תיקו";
+							stage.addChild(theWinner);
+							questionElms.push(theWinner);
+						}
+		
+						var restart_btn = new lib.restart_btn; // הצבת הזמן הכולל שהשחקן שיחק
+						restart_btn.x = 380;
+						restart_btn.y = 380;
+						restart_btn.scaleX = 0.7;
+						restart_btn.scaleY = 0.7;
+						restart_btn.name = "restart_btn";
+						stage.addChild(restart_btn);
+						restart_btn.cursor = "pointer";
+						restart_btn.addEventListener('click', allover);
+						questionElms.push(restart_btn);
+		
+		
+						var restart2_btn = new lib.restart2_btn; // הצבת הזמן הכולל שהשחקן שיחק
+						restart2_btn.x = 570;
+						restart2_btn.y = 380;
+						restart2_btn.scaleX = 0.7;
+						restart2_btn.scaleY = 0.7;
+						restart2_btn.name = "restart2_btn";
+						stage.addChild(restart2_btn);
+						restart2_btn.cursor = "pointer";
+						restart2_btn.addEventListener('click', restart);
+						questionElms.push(restart2_btn);
+		
+		
+		
+		
+		
 					}
 		
-					for (i = 0; i < questionElms.length; i++) {
-						var elmIndex = stage.getChildIndex(questionElms[i]);
-						stage.removeChildAt(elmIndex);
+					function allover() {
+						for (i = 0; i < qmechanics.length; i++) {
+							if (qmechanics[i][0] == 1) {
+								qmechanics[i][0] = 0;
+							}
+						}
+						for (i = 0; i < qsports.length; i++) {
+							if (qsports[i][0] == 1) {
+								qsports[i][0] = 0;
+							}
+						}
+		
+						for (i = 0; i < questionElms.length; i++) {
+							var elmIndex = stage.getChildIndex(questionElms[i]);
+							stage.removeChildAt(elmIndex);
+						}
+		
+						gameInSeconds = 0;
+						gameInMinutes = 0;
+						scorep1 = 0;
+						timeperp1 = 0;
+						falsep1 = 0;
+						scorep2 = 0;
+						timeperp2 = 0;
+						falsep2 = 0;
+						timeperq = 30;
+						qnum = 1;
+						qmax = 0;
+						qnumtxt;
+						selectedQ = -1;
+						questionElms = [];
+						correctAns = 0;
+						timeForthisQuestionp1 = 0;
+						timeForthisQuestionp2 = 0;
+						trigger++;
 						stage.removeChild(stage.getChildByName("blue_car"));
 						stage.removeChild(stage.getChildByName("orange_car"));
-						home.Back.gotoAndPlay(97); //המסך המוצג כעת
-						window.addEventListener("keydown", beforegame);
+		
+						beforegame();
+					}
+					
+					
+					function restart() {
+						location.reload();
+						
 					}
 		
-				}
 		
-		
-				function cleanQuestion() {
-					for (i = 0; i < questionElms.length; i++) {
-						var elmIndex = stage.getChildIndex(questionElms[i])
-						stage.removeChildAt(elmIndex);
-					}
-				}
-				function markAnswerP1() {
-					var rightArrow = new lib.rightArrow();
-					rightArrow.x = (pickedAnsp1) * (stageWidth / (qSelected[rndq].length - 2)) - 260;
-					rightArrow.y = 260;
-					rightArrow.scaleX = 0.5;
-					stage.addChild(rightArrow);
-					rightArrow.name = "rightArrow";
-					questionElms.push(rightArrow);
-				}
-				function markAnswerCorrect() {
-					if ((correctAns - 1) == pickedAnsp1 || (correctAns - 1) == pickedAnsp2) {
-		
-						var correctV = new lib.correctV();
-						correctV.x = (correctAns - 1) * (stageWidth / (qSelected[rndq].length - 2)) - 160;
-						correctV.y = 160;
-						correctV.scaleX = 0.07;
-						correctV.scaleY = 0.07;
-						stage.addChild(correctV);
-						correctV.name = "correctV";
-						questionElms.push(correctV); //שמירת אלמנט במבנה נתונים נוסף ע"מ שנוכל למוחק אחר כך
-						moveSound = createjs.Sound.play("movesSound");
-		
-		
-						if ((correctAns - 1) == pickedAnsp1) {
-		
-							movingcar('left'); //להכניס בנוסף לתוך התנאי
-							scorep1 += parseInt(100 / qmax); //מבצע חישוב של התוספת לציון השחקן הראשון לפי המשתנים הגלובליים
-						}
-						if ((correctAns - 1) == pickedAnsp2) { //להכניס בנוסף לתוך התנאי
-							movingcar('right');
-							scorep2 += parseInt(100 / qmax); //מבצע חישוב של התוספת לציון השחקן השני לפי המשתנים הגלובליים
+					function cleanQuestion() {
+						for (i = 0; i < questionElms.length; i++) {
+							var elmIndex = stage.getChildIndex(questionElms[i])
+							stage.removeChildAt(elmIndex);
 						}
 					}
-					if ((correctAns - 1) != pickedAnsp1 || (correctAns - 1) != pickedAnsp2) {
+					function markAnswerP1() {
+						var rightArrow = new lib.rightArrow();
+						rightArrow.x = (pickedAnsp1) * (stageWidth / (qSelected[rndq].length - 2)) - 260;
+						rightArrow.y = 260;
+						rightArrow.scaleX = 0.5;
+						stage.addChild(rightArrow);
+						rightArrow.name = "rightArrow";
+						questionElms.push(rightArrow);
+					}
+					function markAnswerCorrect() {
+						if ((correctAns - 1) == pickedAnsp1 || (correctAns - 1) == pickedAnsp2) {
 		
-						if ((correctAns - 1) != pickedAnsp1) {
-							var wrongX = new lib.wrongX();
-							wrongX.x = (pickedAnsp1) * (stageWidth / (qSelected[rndq].length - 2)) - 160;
-							wrongX.y = 160;
-							wrongX.scaleX = 0.07;
-							wrongX.scaleY = 0.07;
-							stage.addChild(wrongX);
-							wrongX.name = "wrongX";
-							questionElms.push(wrongX);
-							falsep1++;
+							var correctV = new lib.correctV();
+							correctV.x = (correctAns - 1) * (stageWidth / (qSelected[rndq].length - 2)) - 160;
+							correctV.y = 160;
+							correctV.scaleX = 0.07;
+							correctV.scaleY = 0.07;
+							stage.addChild(correctV);
+							correctV.name = "correctV";
+							questionElms.push(correctV); //שמירת אלמנט במבנה נתונים נוסף ע"מ שנוכל למוחק אחר כך
+							moveSound = createjs.Sound.play("movesSound");
+		
+		
+							if ((correctAns - 1) == pickedAnsp1) {
+		
+								movingcar('left'); //להכניס בנוסף לתוך התנאי
+								scorep1 += parseInt(100 / qmax); //מבצע חישוב של התוספת לציון השחקן הראשון לפי המשתנים הגלובליים
+							}
+							if ((correctAns - 1) == pickedAnsp2) { //להכניס בנוסף לתוך התנאי
+								movingcar('right');
+								scorep2 += parseInt(100 / qmax); //מבצע חישוב של התוספת לציון השחקן השני לפי המשתנים הגלובליים
+							}
 						}
+						if ((correctAns - 1) != pickedAnsp1 || (correctAns - 1) != pickedAnsp2) {
 		
-						if ((correctAns - 1) != pickedAnsp2) {
-							var wrongX = new lib.wrongX();
-							wrongX.x = (pickedAnsp2) * (stageWidth / (qSelected[rndq].length - 2)) - 160;
-							wrongX.y = 160;
-							wrongX.scaleX = 0.07;
-							wrongX.scaleY = 0.07;
-							stage.addChild(wrongX);
-							wrongX.name = "wrongX";
-							questionElms.push(wrongX);
-							falsep2++;
-						}
+							if ((correctAns - 1) != pickedAnsp1) {
+								var wrongX = new lib.wrongX();
+								wrongX.x = (pickedAnsp1) * (stageWidth / (qSelected[rndq].length - 2)) - 160;
+								wrongX.y = 160;
+								wrongX.scaleX = 0.07;
+								wrongX.scaleY = 0.07;
+								stage.addChild(wrongX);
+								wrongX.name = "wrongX";
+								questionElms.push(wrongX);
+								falsep1++;
+							}
 		
-						if ((correctAns - 1) != pickedAnsp1 && (correctAns - 1) != pickedAnsp2) { //בודק אם במקרה שניהם לא ענו נכון
-							qSelected[rndq][0] = 0; //מאפס את מענה השאלה - כדי שתחזור על עצמה שוב						
-						} else {
-							if (qnum != 5) {
-								qnum++;
+							if ((correctAns - 1) != pickedAnsp2) {
+								var wrongX = new lib.wrongX();
+								wrongX.x = (pickedAnsp2) * (stageWidth / (qSelected[rndq].length - 2)) - 160;
+								wrongX.y = 160;
+								wrongX.scaleX = 0.07;
+								wrongX.scaleY = 0.07;
+								stage.addChild(wrongX);
+								wrongX.name = "wrongX";
+								questionElms.push(wrongX);
+								falsep2++;
+							}
+		
+							if ((correctAns - 1) != pickedAnsp1 && (correctAns - 1) != pickedAnsp2) { //בודק אם במקרה שניהם לא ענו נכון
+								qSelected[rndq][0] = 0; //מאפס את מענה השאלה - כדי שתחזור על עצמה שוב						
+							} else {
+								if (qnum != 5) {
+									qnum++;
+								}
 							}
 						}
 					}
-				}
-				function markAnswerP1() {
-					var rightArrow = new lib.rightArrow();
-					rightArrow.x = (pickedAnsp1) * (stageWidth / (qSelected[rndq].length - 2)) - 260;
-					rightArrow.y = 235;
-					rightArrow.scaleX = 0.5;
-					stage.addChild(rightArrow);
-					rightArrow.name = "rightArrow";
-					questionElms.push(rightArrow);
-				}
-				function markAnswerP2() {
-					var leftArrow = new lib.leftArrow();
-					leftArrow.x = (pickedAnsp2) * (stageWidth / (qSelected[rndq].length - 2)) - 50;
-					leftArrow.y = 285;
-					leftArrow.scaleX = 0.5;
-					stage.addChild(leftArrow);
-					leftArrow.name = "leftArrow";
-					questionElms.push(leftArrow);
-				}
+					function markAnswerP1() {
+						var rightArrow = new lib.rightArrow();
+						rightArrow.x = (pickedAnsp1) * (stageWidth / (qSelected[rndq].length - 2)) - 260;
+						rightArrow.y = 235;
+						rightArrow.scaleX = 0.5;
+						stage.addChild(rightArrow);
+						rightArrow.name = "rightArrow";
+						questionElms.push(rightArrow);
+					}
+					function markAnswerP2() {
+						var leftArrow = new lib.leftArrow();
+						leftArrow.x = (pickedAnsp2) * (stageWidth / (qSelected[rndq].length - 2)) - 50;
+						leftArrow.y = 285;
+						leftArrow.scaleX = 0.5;
+						stage.addChild(leftArrow);
+						leftArrow.name = "leftArrow";
+						questionElms.push(leftArrow);
+					}
 		
-				function openkeys() {
+					function openkeys() {
 		
-					window.addEventListener("keydown", processAnswers);
+						window.addEventListener("keydown", processAnswers);
 		
-					function processAnswers(e) {
+						function processAnswers(e) {
 		
-						if (counterAnsp1 == 0) { //מאפשר לחיצה אם שחקן 1 לא בחר כבר לפני
-							if (e.keyCode == 49) {
-								//להוסיף חץ בצד הנבחר (1), לקדם את הרכב במידת הצורך
-								counterAnsp1++;
-								pickedAnsp1 = 1;
-								console.log("Player 1 choose: 1");
-								markAnswerP1()
+							if (counterAnsp1 == 0) { //מאפשר לחיצה אם שחקן 1 לא בחר כבר לפני
+								if (e.keyCode == 49) {
+									//להוסיף חץ בצד הנבחר (1), לקדם את הרכב במידת הצורך
+									counterAnsp1++;
+									pickedAnsp1 = 1;
+									console.log("Player 1 choose: 1");
+									markAnswerP1()
+								}
+								if (e.keyCode == 50) {
+									//להוסיף חץ בצד הנבחר (2), לקדם את הרכב במידת הצורך
+									counterAnsp1++;
+									pickedAnsp1 = 2;
+									console.log("Player 1 choose: 2");
+									markAnswerP1()
+								}
+								if (e.keyCode == 51 && qSelected[selectedQ].length > 4) {
+									//להוסיף חץ בצד הנבחר (3), לקדם את הרכב במידת הצורך
+									counterAnsp1++;
+									pickedAnsp1 = 3;
+									console.log("Player 1 choose: 3");
+									markAnswerP1()
+								}
+								if (e.keyCode == 52 && qSelected[selectedQ].length > 5) {
+									//להוסיף חץ בצד הנבחר (4), לקדם את הרכב במידת הצורך
+									counterAnsp1++;
+									pickedAnsp1 = 4;
+									console.log("Player 1 choose: 4");
+									markAnswerP1()
+								}
+								timeperp1 += 30 - timeperq;
+								if (counterAnsp1 > 0 && counterAnsp2 > 0) {
+									markAnswerCorrect();
+								}
 							}
-							if (e.keyCode == 50) {
-								//להוסיף חץ בצד הנבחר (2), לקדם את הרכב במידת הצורך
-								counterAnsp1++;
-								pickedAnsp1 = 2;
-								console.log("Player 1 choose: 2");
-								markAnswerP1()
-							}
-							if (e.keyCode == 51 && qSelected[selectedQ].length > 4) {
-								//להוסיף חץ בצד הנבחר (3), לקדם את הרכב במידת הצורך
-								counterAnsp1++;
-								pickedAnsp1 = 3;
-								console.log("Player 1 choose: 3");
-								markAnswerP1()
-							}
-							if (e.keyCode == 52 && qSelected[selectedQ].length > 5) {
-								//להוסיף חץ בצד הנבחר (4), לקדם את הרכב במידת הצורך
-								counterAnsp1++;
-								pickedAnsp1 = 4;
-								console.log("Player 1 choose: 4");
-								markAnswerP1()
-							}
-							timeperp1 += 30 - timeperq;
-							if (counterAnsp1 > 0 && counterAnsp2 > 0) {
-								markAnswerCorrect();
-							}
-						}
 		
-						if (counterAnsp2 == 0) { //מאפשר לחיצה אם שחקן 2 לא בחר כבר לפני
-							if (e.keyCode == 97) {
-								//להוסיף חץ בצד הנבחר (1), לקדם את הרכב במידת הצורך
-								counterAnsp2++;
-								pickedAnsp2 = 1;
-								console.log("Player 2 choose: 1");
-								markAnswerP2()
+							if (counterAnsp2 == 0) { //מאפשר לחיצה אם שחקן 2 לא בחר כבר לפני
+								if (e.keyCode == 97) {
+									//להוסיף חץ בצד הנבחר (1), לקדם את הרכב במידת הצורך
+									counterAnsp2++;
+									pickedAnsp2 = 1;
+									console.log("Player 2 choose: 1");
+									markAnswerP2()
 		
+								}
+								if (e.keyCode == 98) {
+									//להוסיף חץ בצד הנבחר (2), לקדם את הרכב במידת הצורך
+									counterAnsp2++;
+									pickedAnsp2 = 2;
+									console.log("Player 2 choose: 2");
+									markAnswerP2()
+		
+								}
+								if (e.keyCode == 99 && qSelected[selectedQ].length > 4) {
+									//להוסיף חץ בצד הנבחר (3), לקדם את הרכב במידת הצורך
+									counterAnsp2++;
+									pickedAnsp2 = 3;
+									console.log("Player 2 choose: 3");
+									markAnswerP2()
+		
+								}
+								if (e.keyCode == 100 && qSelected[selectedQ].length > 5) {
+									//להוסיף חץ בצד הנבחר (4), לקדם את הרכב במידת הצורך
+									counterAnsp2++;
+									pickedAnsp2 = 4;
+									console.log("Player 2 choose: 4");
+									markAnswerP2()
+								}
+								timeperp2 += 30 - timeperq;
+		
+								if (counterAnsp1 > 0 && counterAnsp2 > 0) {
+									markAnswerCorrect();
+								}
 							}
-							if (e.keyCode == 98) {
-								//להוסיף חץ בצד הנבחר (2), לקדם את הרכב במידת הצורך
-								counterAnsp2++;
-								pickedAnsp2 = 2;
-								console.log("Player 2 choose: 2");
-								markAnswerP2()
-		
-							}
-							if (e.keyCode == 99 && qSelected[selectedQ].length > 4) {
-								//להוסיף חץ בצד הנבחר (3), לקדם את הרכב במידת הצורך
-								counterAnsp2++;
-								pickedAnsp2 = 3;
-								console.log("Player 2 choose: 3");
-								markAnswerP2()
-		
-							}
-							if (e.keyCode == 100 && qSelected[selectedQ].length > 5) {
-								//להוסיף חץ בצד הנבחר (4), לקדם את הרכב במידת הצורך
-								counterAnsp2++;
-								pickedAnsp2 = 4;
-								console.log("Player 2 choose: 4");
-								markAnswerP2()
-							}
-							timeperp2 += 30 - timeperq;
-		
-							if (counterAnsp1 > 0 && counterAnsp2 > 0) {
-								markAnswerCorrect();
-							}
-						}
-						if (timeperq == 0) {
-							clearInterval(timerInterval);
-							cleanQuestion();
-		
-							var endOfTime = new lib.timeroffbox();
-							endOfTime.x = stageWidth / 2;
-							endOfTime.y = 230;
-							endOfTime.name = "endOfTime";
-							stage.addChild(endOfTime);
-							questionElms.push(endOfTime);
-		
-							if (e.keyCode == 13) {
-								stage.removeChild(stage.getChildByName("endOfTime"));
-								window.removeEventListener("keydown", processAnswers);
-								timeperq = 30;
-								counterAnsp1 = 0; //מאפס את ההגבלה על בחירה נוספת של השחקן
-								counterAnsp2 = 0; //מאפס את ההגבלה על בחירה נוספת של השחקן
-								//לאפס את כל החלון - להוריד כל מה שעליו
-								bringTheQuestion(); //בחירת שאלה מחדש
-							}
-						}
-						if (counterAnsp1 == 1 && counterAnsp2 == 1) {
-		
-							//מונע לחיצות אחרות מעבר לאנטר ומעבר לשאלה הבאה
-							//להקפיץ את התשובות הנכונות/לא נכונות ואת ההנחיה להמשך ע"ג המסך
-							clearInterval(timerInterval);
-							timeperq = 30;
-							var nextscreentxt = new createjs.Text();
-							nextscreentxt.x = 400;
-							nextscreentxt.y = 440;
-							nextscreentxt.color = "#FFFFFF";
-							nextscreentxt.font = "15px Arial";
-							stage.addChild(nextscreentxt);
-							nextscreentxt.text = " להמשך הקישו על ENTER";
-							nextscreentxt.name = "nextscreentxt";
-							questionElms.push(nextscreentxt);
-		
-							if (e.keyCode == 13) {
-								stage.removeChild(stage.getChildByName("nextscreentxt"));
-								window.removeEventListener("keydown", processAnswers);
-								counterAnsp1 = 0; //מאפס את ההגבלה על בחירה נוספת של השחקן
-								counterAnsp2 = 0; //מאפס את ההגבלה על בחירה נוספת של השחקן
-								//לאפס את כל החלון - להוריד כל מה שעליו
+							if (timeperq == 0) {
+								clearInterval(timerInterval);
 								cleanQuestion();
-								bringTheQuestion(); //בחירת שאלה מחדש
+		
+								var endOfTime = new lib.timeroffbox();
+								endOfTime.x = stageWidth / 2;
+								endOfTime.y = 230;
+								endOfTime.name = "endOfTime";
+								stage.addChild(endOfTime);
+								questionElms.push(endOfTime);
+		
+								if (e.keyCode == 13) {
+									stage.removeChild(stage.getChildByName("endOfTime"));
+									window.removeEventListener("keydown", processAnswers);
+									timeperq = 30;
+									counterAnsp1 = 0; //מאפס את ההגבלה על בחירה נוספת של השחקן
+									counterAnsp2 = 0; //מאפס את ההגבלה על בחירה נוספת של השחקן
+									//לאפס את כל החלון - להוריד כל מה שעליו
+									bringTheQuestion(); //בחירת שאלה מחדש
+								}
+							}
+							if (counterAnsp1 == 1 && counterAnsp2 == 1) {
+		
+								//מונע לחיצות אחרות מעבר לאנטר ומעבר לשאלה הבאה
+								//להקפיץ את התשובות הנכונות/לא נכונות ואת ההנחיה להמשך ע"ג המסך
+								clearInterval(timerInterval);
+								timeperq = 30;
+								var nextscreentxt = new createjs.Text();
+								nextscreentxt.x = 400;
+								nextscreentxt.y = 440;
+								nextscreentxt.color = "#FFFF00";
+								nextscreentxt.font = "16px Arial";
+								stage.addChild(nextscreentxt);
+								nextscreentxt.text = " להמשך הקישו על ENTER";
+								nextscreentxt.name = "nextscreentxt";
+								questionElms.push(nextscreentxt);
+		
+								if (e.keyCode == 13) {
+									stage.removeChild(stage.getChildByName("nextscreentxt"));
+									window.removeEventListener("keydown", processAnswers);
+									counterAnsp1 = 0; //מאפס את ההגבלה על בחירה נוספת של השחקן
+									counterAnsp2 = 0; //מאפס את ההגבלה על בחירה נוספת של השחקן
+									//לאפס את כל החלון - להוריד כל מה שעליו
+									cleanQuestion();
+									bringTheQuestion(); //בחירת שאלה מחדש
+								}
 							}
 						}
 					}
 				}
+		
 			}
 		
-		}
+			//-------------------פונקציית טיקר לתזוזת רכבים
+			function movingcar(car) {
+				if (car == 'left') {
 		
-		//-------------------פונקציית טיקר לתזוזת רכבים
-		function movingcar(car) {
-			if (car == 'left') {
+					carmove = stage.getChildByName("blue_car");
+					position = carmove.x;
 		
-				carmove = stage.getChildByName("blue_car");
-				position = carmove.x;
+					carsInterval = setInterval(function () {
+						console.log("left moved to: " + (carmove.x + carMovment))
+						if (carmove.x <= (position + carDistance)) {
+							carmove.x += carMovment;
+						} else {
+							clearInterval(carsInterval);
+						}
+					}, 5);
+				} else if (car == 'right') {
 		
-				carsInterval = setInterval(function () {
-					console.log("left moved to: " + (carmove.x + carMovment))
-					if (carmove.x <= (position + carDistance)) {
-						carmove.x += carMovment;
-					} else {
-						clearInterval(carsInterval);
-					}
-				}, 5);
-			} else if (car == 'right') {
+					carmove2 = stage.getChildByName("orange_car");
+					position2 = carmove2.x;
 		
-				carmove2 = stage.getChildByName("orange_car");
-				position2 = carmove2.x;
+					carsInterval2 = setInterval(function () {
 		
-				carsInterval2 = setInterval(function () {
+						console.log("right moved to: " + (carmove2.x + carMovment))
+						if (carmove2.x <= (position2 + carDistance)) {
+							carmove2.x += carMovment;
+						} else {
+							clearInterval(carsInterval2);
+						}
+					}, 5);
+				}
 		
-					console.log("right moved to: " + (carmove2.x + carMovment))
-					if (carmove2.x <= (position2 + carDistance)) {
-						carmove2.x += carMovment;
-					} else {
-						clearInterval(carsInterval2);
-					}
-				}, 5);
 			}
 		
-		}
+		
+			//------------------אודות
+		
+			function aboutFunc() {
+		
+				//הוספת חלונית אודות בלחיצה על אודות
+				var aboutWindow = new lib.about();
+				aboutWindow.scaleX = 0.8;
+				aboutWindow.scaleY = 0.8;
+				aboutWindow.name = "aboutWindow";
+				aboutWindow.x = 100;
+				aboutWindow.y = 80;
+				stage.addChild(aboutWindow);
 		
 		
-		//------------------אודות
+				var aboutX = new lib.about_x();
+				aboutX.x = 116;
+				aboutX.y = 95;
+				aboutX.name = "aboutX";
+				stage.addChild(aboutX);
 		
-		function aboutFunc() {
+				//הוספת כותרת של המשחק
+				var gameTitleAbout = new createjs.Text();
+				gameTitleAbout.text = "מרוץ הידע";
+				gameTitleAbout.color = "black";
+				gameTitleAbout.font = "bold 17pt Arial";
+				gameTitleAbout.name = "aboutTitle";
+				stage.addChild(gameTitleAbout);
+				gameTitleAbout.x = 390;
+				gameTitleAbout.y = 158;
 		
-			//הוספת חלונית אודות בלחיצה על אודות
-			var aboutWindow = new lib.about();
-			aboutWindow.scaleX = 0.8;
-			aboutWindow.scaleY = 0.8;
-			aboutWindow.name = "aboutWindow";
-			aboutWindow.x = 100;
-			aboutWindow.y = 80;
-			stage.addChild(aboutWindow);
+				//הוספת יוצרים
+				var gameCreatorsAbout = new createjs.Text();
+				gameCreatorsAbout.text = "אפיון ופיתוח: יפים יגורוב ודין מרקוס";
+				gameCreatorsAbout.color = "black";
+				gameCreatorsAbout.font = "bold 14pt Arial";
+				gameCreatorsAbout.name = "aboutCreators";
+				stage.addChild(gameCreatorsAbout);
+				gameCreatorsAbout.x = 340;
+				gameCreatorsAbout.y = 185;
+				//הוספת מסגרת קורס
+				var gameCoursesAbout = new createjs.Text();
+				gameCoursesAbout.text = "פותח במסגרת פרוייקט בקורס: סביבות לימוד אינטרקטיביות 1 & אנימציה";
+				gameCoursesAbout.color = "black";
+				gameCoursesAbout.font = "14pt Arial";
+				stage.addChild(gameCoursesAbout);
+				gameCoursesAbout.textAlign = "center";
+				gameCoursesAbout.name = "aboutCourses";
+				gameCoursesAbout.x = 470;
+				gameCoursesAbout.y = 220;
 		
+				//הוספת טקסט למכון הטכנולוגי
+				var hitText = new lib.hitText();
+				hitText.x = 470;
+				hitText.y = 450;
+				hitText.name = "hitText";
+				stage.addChild(hitText);
 		
-			var aboutX = new lib.about_x();
-			aboutX.x = 116;
-			aboutX.y = 95;
-			aboutX.name = "aboutX";
-			stage.addChild(aboutX);
+				//הוספת לוגו של המכון הטכנולוגי חולון
+				var hitLogo = new lib.hitLogo();
+				hitLogo.x = 470;
+				hitLogo.y = 350;
+				hitLogo.scaleX = 0.8;
+				hitLogo.scaleY = 0.8;
+				hitLogo.name = "HIT";
+				stage.addChild(hitLogo);
 		
-			//הוספת כותרת של המשחק
-			var gameTitleAbout = new createjs.Text();
-			gameTitleAbout.text = "מרוץ הידע";
-			gameTitleAbout.color = "black";
-			gameTitleAbout.font = "bold 17pt Arial";
-			gameTitleAbout.name = "aboutTitle";
-			stage.addChild(gameTitleAbout);
-			gameTitleAbout.x = 390;
-			gameTitleAbout.y = 158;
+				//פונקציית סגירת אודות
+				hitLogo.addEventListener('click', HITLink);
+				aboutX.addEventListener("click", closeAbout);
+				stage.getChildByName("Myforcombo").y = 1000;
 		
-			//הוספת יוצרים
-			var gameCreatorsAbout = new createjs.Text();
-			gameCreatorsAbout.text = "אפיון ופיתוח: יפים יגורוב ודין מרקוס";
-			gameCreatorsAbout.color = "black";
-			gameCreatorsAbout.font = "bold 14pt Arial";
-			gameCreatorsAbout.name = "aboutCreators";
-			stage.addChild(gameCreatorsAbout);
-			gameCreatorsAbout.x = 340;
-			gameCreatorsAbout.y = 185;
-			//הוספת מסגרת קורס
-			var gameCoursesAbout = new createjs.Text();
-			gameCoursesAbout.text = "פותח במסגרת פרוייקט בקורס: סביבות לימוד אינטרקטיביות 1 & אנימציה";
-			gameCoursesAbout.color = "black";
-			gameCoursesAbout.font = "14pt Arial";
-			stage.addChild(gameCoursesAbout);
-			gameCoursesAbout.textAlign = "center";
-			gameCoursesAbout.name = "aboutCourses";
-			gameCoursesAbout.x = 470;
-			gameCoursesAbout.y = 220;
-		
-			//הוספת טקסט למכון הטכנולוגי
-			var hitText = new lib.hitText();
-			hitText.x = 470;
-			hitText.y = 450;
-			hitText.name = "hitText";
-			stage.addChild(hitText);
-		
-			//הוספת לוגו של המכון הטכנולוגי חולון
-			var hitLogo = new lib.hitLogo();
-			hitLogo.x = 470;
-			hitLogo.y = 350;
-			hitLogo.scaleX = 0.8;
-			hitLogo.scaleY = 0.8;
-			hitLogo.name = "HIT";
-			stage.addChild(hitLogo);
-		
-			//פונקציית סגירת אודות
-			hitLogo.addEventListener('click', HITLink);
-			aboutX.addEventListener("click", closeAbout);
-			stage.getChildByName("Myforcombo").y = 1000;
-		
-		}
-		
-		
-		
-		function closeAbout() { //פונקציית סגירת אודות
-		
-			stage.removeChild(stage.getChildByName("aboutX"));
-			stage.removeChild(stage.getChildByName("aboutWindow"));
-			stage.removeChild(stage.getChildByName("HIT"));
-			stage.removeChild(stage.getChildByName("hitText"));
-			stage.removeChild(stage.getChildByName("aboutCourses"));
-			stage.removeChild(stage.getChildByName("aboutCreators"));
-			stage.removeChild(stage.getChildByName("aboutTitle"));
-		
-		
-			stage.getChildByName("Myforcombo").y = 360;
-		
-		}
-		
-		//פונקציה שפותחת את עמוד הפקולטה של המכון בלחיצה על הלוגו בעמוד האודות
-		function HITLink() {
-			window.open("http://www.hit.ac.il/telem/overview");
-		}
-		
-		
-		function timesUp() {
-			console.log("Times up!");
-		}
-		function timer() {
-			if (parseInt(textboxfortimer.text) > 0) {
-				textboxfortimer.text = (parseInt(textboxfortimer.text) - 1).toString();
-				timeperq--;
-				gameInSeconds++; //מהרגע שמתחילה לרוץ, מעלה את סכום הזמן של המשחק כל פעם ב-1
-			} else {
-				timesUp();
 			}
 		
-		}
+		
+		
+			function closeAbout() { //פונקציית סגירת אודות
+		
+				stage.removeChild(stage.getChildByName("aboutX"));
+				stage.removeChild(stage.getChildByName("aboutWindow"));
+				stage.removeChild(stage.getChildByName("HIT"));
+				stage.removeChild(stage.getChildByName("hitText"));
+				stage.removeChild(stage.getChildByName("aboutCourses"));
+				stage.removeChild(stage.getChildByName("aboutCreators"));
+				stage.removeChild(stage.getChildByName("aboutTitle"));
+		
+		
+				stage.getChildByName("Myforcombo").y = 360;
+		
+			}
+		
+			//פונקציה שפותחת את עמוד הפקולטה של המכון בלחיצה על הלוגו בעמוד האודות
+			function HITLink() {
+				window.open("http://www.hit.ac.il/telem/overview");
+			}
+		
+		
+			function timesUp() {
+				console.log("Times up!");
+			}
+			function timer() {
+				if (parseInt(textboxfortimer.text) > 0) {
+					textboxfortimer.text = (parseInt(textboxfortimer.text) - 1).toString();
+					timeperq--;
+					gameInSeconds++; //מהרגע שמתחילה לרוץ, מעלה את סכום הזמן של המשחק כל פעם ב-1
+				} else {
+					timesUp();
+				}
+		
+			}
 	}
 
 	// actions tween:
